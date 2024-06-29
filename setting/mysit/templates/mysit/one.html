@@ -8,4 +8,13 @@
 
 {% block content %}
     <h3>Очень главная страница</h3>
+    {% if x %}
+        {% for i in x %}
+            <p>{{ i.title_1 }}</p>
+            <p>{{ i.title_1 }}</p>
+        {% endfor %}
+    {% else %}
+        Нет записей
+    {% endif %}
+
 {% endblock %}

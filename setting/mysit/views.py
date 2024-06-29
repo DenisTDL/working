@@ -1,8 +1,9 @@
 from django.shortcuts import render
-
+from .models import Task
 
 def one(request):
-    return render(request, 'mysit/one.html')
+    x = Task.objects.all()
+    return render(request, 'mysit/one.html', {"x": x})
 
 
 def two(request):
@@ -11,3 +12,7 @@ def two(request):
 
 def three(request):
     return render(request, 'mysit/three.html')
+
+
+def create(request):
+    return render(request, 'mysit/create.html')

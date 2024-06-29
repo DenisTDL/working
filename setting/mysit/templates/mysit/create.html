@@ -1,0 +1,17 @@
+{% extends 'mysit/base.html' %}
+
+
+{% block title %}
+    Табличка
+{% endblock %}
+
+
+{% block content %}
+    <h3>Создать табличку!</h3>
+    <form method="post">
+        <input type="text" placeholder="Введите тексе" class="form-control"><br>
+        <textarea placeholder="Введите еще текст"  class="text form-control"></textarea><br>
+        <button type="submit" class="btn btn-success">Создать</button>
+
+    </form>
+{% endblock %}
